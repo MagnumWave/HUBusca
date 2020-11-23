@@ -108,7 +108,8 @@ export class AppComponent {
             language: item.language,
             description: item.description,
             created_at: item.created_at.slice(0, 10),
-            pushed_at: item.pushed_at.slice(0, 10)
+            pushed_at: item.pushed_at.slice(0, 10),
+            html_url: item.html_url
           };
           auxArr.push(auxObj);
           this.repsDoUser1.push(auxObj);
@@ -132,6 +133,10 @@ export class AppComponent {
 
   clickaFoto(): void{
     this.segPop = true;
+  }
+
+  clickaRepo(url: string): void{
+    window.open(url);
   }
 
 }

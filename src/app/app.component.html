@@ -77,7 +77,7 @@
       <th><p class="text-center">Data de Criação</p></th>
       <th><p class="text-center">Data do Último Push</p></th>
     </tr>
-    <tr *ngFor="let reps of repsDoUser1">
+    <tr *ngFor="let reps of repsDoUser1" (click)="clickaRepo(reps.html_url)">
       <td class="text-center mw-tabela-mobilefix">{{reps.name}}</td>
       <td class="text-center">{{ reps.language }}</td>
       <td class="text-center mw-tabela-desc">{{ reps.description }}</td>

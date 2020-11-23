@@ -96,6 +96,10 @@
     border: #222 1px solid;
   }
 
+  .mw-ajusta-tabela th:hover {
+    cursor: default;
+  }
+
   .mw-ajusta-tabela tr:nth-child(even) {
     background-color: #ddd;
   }
@@ -106,6 +110,10 @@
 
   .mw-ajusta-tabela td {
     border:#444 1px solid;
+  }
+
+  .mw-ajusta-tabela td {
+    cursor:pointer;
   }
 
   .mw-tabela-desc {
