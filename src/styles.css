@@ -1,0 +1,238 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* RESPONSIVIDADE DESKTOP! */
+/* RESPONSIVIDADE DESKTOP! */
+/* RESPONSIVIDADE DESKTOP! */
+
+@media screen and (orientation:landscape) {
+  .mw-ajusta-buscador {
+    width: 50vw
+  }
+
+  .mw-ajusta-botao button {
+    box-shadow: black 2px 2px 2px;
+    background-color: darkgray;
+    border-color: gray;
+    color: black;
+  }
+
+  .mw-ajusta-botao button:hover {
+    box-shadow: black 3px 3px 3px;
+    background-color: darkslategray;
+    border-color: black;
+    text-shadow: black 2px 2px 2px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .mw-ajusta-botao button:focus {
+    box-shadow: black 3px 3px 3px;
+    background-color: darkslategray;
+    border-color: black;
+    text-shadow: black 2px 2px 2px;
+    text-decoration: underline;
+  }
+
+  .mw-ajusta-foto-container {
+    margin-left:2vw;
+  }
+
+  .mw-ajusta-foto-img {
+    box-shadow: gray 3px 3px 2px;
+    border-radius: 50%;
+    width: 12vw;
+    resize:both;
+    position: relative;
+    left: 10%;
+    margin-top:2vh;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .mw-ajusta-primPop {
+    width: 70vw;
+
+  }
+
+  .mw-ajusta-form {
+    padding-left:5vw;
+  }
+
+  .mw-ajusta-form input {
+    margin-left: 1vw;
+    text-align: center;
+    min-width:30vw;
+  }
+
+  .mw-ajusta-parag {
+    padding-top:2vh;
+    text-decoration: underline;
+    text-shadow: gray 1px 1px 1px;
+    color: black;
+    text-align: right;
+  }
+
+  .mw-ajusta-segPop {
+    width: 80vw;
+  }
+
+  .mw-ext-table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mw-ext-table input {
+    margin-left: 1vw;
+    text-align: left;
+  }
+
+  .mw-ajusta-tabela {
+    background-color: #aaa;
+  }
+
+  .mw-ajusta-tabela th {
+    background-color: #666;
+    border: #222 1px solid;
+  }
+
+  .mw-ajusta-tabela tr:nth-child(even) {
+    background-color: #ddd;
+  }
+
+  .mw-ajusta-tabela th p {
+    font-size: 0.9rem;
+  }
+
+  .mw-ajusta-tabela td {
+    border:#444 1px solid;
+  }
+
+  .mw-tabela-desc {
+    max-width: 35vw;
+    word-wrap: normal;
+  }
+
+}
+
+/* RESPONSIVIDADE MOBILE! */
+/* RESPONSIVIDADE MOBILE! */
+/* RESPONSIVIDADE MOBILE! */
+
+@media screen and (orientation:portrait) {
+  .mw-ajusta-buscador {
+    width: 50vw
+  }
+
+  .mw-ajusta-botao button {
+    box-shadow: black 2px 2px 2px;
+    background-color: darkgray;
+    border-color: gray;
+    color: black;
+  }
+
+  .mw-ajusta-botao button:hover {
+    box-shadow: black 3px 3px 3px;
+    background-color: darkslategray;
+    border-color: black;
+    text-shadow: black 2px 2px 2px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .mw-ajusta-botao button:focus {
+    box-shadow: black 3px 3px 3px;
+    background-color: darkslategray;
+    border-color: black;
+    text-shadow: black 2px 2px 2px;
+    text-decoration: underline;
+  }
+
+  .mw-ajusta-foto-container {
+    margin-left: 2vw;
+  }
+
+  .mw-ajusta-foto-img {
+    box-shadow: gray 3px 3px 2px;
+    border-radius: 50%;
+    width: 20vw;
+    resize:both;
+    position: relative;
+    left: 10%;
+    margin-top:2vh;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .mw-ajusta-primPop {
+    width: 90vw;
+
+  }
+
+  .mw-ajusta-form {
+    padding-left:10vw;
+  }
+
+  .mw-ajusta-form input {
+    margin-left: 1vw;
+    text-align: center;
+    min-width:40vw;
+  }
+
+  .mw-ajusta-parag {
+    padding-top:2vh;
+    text-decoration: underline;
+    text-shadow: gray 1px 1px 1px;
+    color: black;
+    text-align: right;
+  }
+
+  .mw-ajusta-segPop {
+    width: 80vw;
+  }
+
+  .mw-ext-table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mw-ext-table input {
+    margin-left: 1vw;
+    text-align: left;
+  }
+
+  .mw-ajusta-tabela {
+    background-color: #aaa;
+    margin-left: -5vw;
+  }
+
+  .mw-ajusta-tabela th {
+    background-color: #666;
+    border: #222 1px solid;
+  }
+
+  .mw-ajusta-tabela tr:nth-child(even) {
+    background-color: #ddd;
+  }
+
+  .mw-ajusta-tabela th p {
+    font-size: 0.9rem;
+  }
+
+  .mw-ajusta-tabela td {
+    border:#444 1px solid;
+    max-width:20vw;
+  }
+
+  .mw-tabela-desc {
+    max-width: 35vw;
+    word-wrap: normal;
+  }
+
+  .mw-tabela-mobilefix{
+    width: 8vw;
+    word-wrap: break-word;
+  }
+
+}

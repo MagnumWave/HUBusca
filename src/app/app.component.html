@@ -1,0 +1,90 @@
+<!-- COMEÇA BUSCADOR -->
+<div class="container mw-ajusta-buscador">
+  <div class="form-group">
+    <input type="text"
+      class="form-control"  #name id="name"
+      aria-describedby="helpId" placeholder="Digite o Usuário aqui..." >
+  </div>
+</div>
+<div class="container text-center mw-ajusta-buscador mw-ajusta-botao">
+  <button type="button" (click)="getUser(name.value)" class="btn btn-primary">Buscar</button>
+</div>
+<!-- TERMINA BUSCADOR -->
+
+
+<br>
+
+
+<!-- COMEÇA INTRODUÇÃO -->
+<div class="container mw-ajusta-primPop" *ngIf="primPop">
+  <div class="row">
+    <div class="col-2 mw-ajusta-foto-container">
+      <img [src]="usuario2.avatar_url"
+      class="img mw-ajusta-foto-img" alt="" (click)="clickaFoto()">
+      <!-- <img src="/assets/img/Mickey-Mouse-2.jpg"
+      class="img mw-ajusta-foto-img" alt="" (click)="clickaFoto()"> -->
+    </div>
+    <div class="col-2 form-group mw-ajusta-form">
+      <table>
+        <tr>
+          <td><p class="mw-ajusta-parag">Nome:</p></td>
+          <td><input type="text" class="form-control" [value]="usuario2.name" disabled></td>
+        </tr>
+        <tr>
+          <td><p class="mw-ajusta-parag">Login:</p></td>
+          <td><input type="text" class="form-control" [value]="usuario2.login" disabled></td>
+        </tr>
+        <tr>
+          <td><p class="mw-ajusta-parag">Localização:</p></td>
+          <td><input type="text" class="form-control" [value]="usuario2.location" disabled></td>
+        </tr>
+      </table>
+
+
+    </div>
+  </div>
+</div>
+<!-- TERMINA INTRODUÇÃO -->
+
+
+<br>
+
+
+<!-- COMEÇA SEQUÊNCIA -->
+<div class="container form-group mw-ajusta-segPop" *ngIf="segPop">
+  <table class="mw-ext-table">
+    <tr>
+      <td><p class="mw-ajusta-parag">ID:</p></td>
+      <td><input class="form-control" type="text" [value]="usuario2.id" disabled></td>
+    </tr>
+    <tr>
+      <td><p class="mw-ajusta-parag">Seguidores:</p></td>
+      <td><input class="form-control" type="text" [value]="usuario2.followers" disabled></td>
+    </tr>
+    <tr>
+      <td><p class="mw-ajusta-parag">Repositórios:</p></td>
+      <td><input class="form-control" type="text" [value]="usuario2.public_repos" disabled></td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table class="mw-ajusta-tabela">
+    <tr>
+      <th class="mw-tabela-mobilefix"><p class="text-center">Nome</p></th>
+      <th><p class="text-center">Linguagem</p></th>
+      <th class="mw-tabela-desc"><p class="text-center">Descrição</p></th>
+      <th><p class="text-center">Data de Criação</p></th>
+      <th><p class="text-center">Data do Último Push</p></th>
+    </tr>
+    <tr *ngFor="let reps of repsDoUser1">
+      <td class="text-center mw-tabela-mobilefix">{{reps.name}}</td>
+      <td class="text-center">{{ reps.language }}</td>
+      <td class="text-center mw-tabela-desc">{{ reps.description }}</td>
+      <td class="text-center">{{ reps.created_at }}</td>
+      <td class="text-center">{{ reps.pushed_at }}</td>
+    </tr>
+  </table>
+
+</div>
+<!-- TERMINA SEQUÊNCIA -->
